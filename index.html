@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ANZ Shorts</title>
+<style>
+body {
+margin: 0;
+background: black;
+overflow-y: scroll;
+scroll-snap-type: y mandatory;
+}
+
+.video-container {
+height: 100vh;
+scroll-snap-align: start;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+video {
+height: 100vh;
+width: auto;
+max-width: 100%;
+object-fit: cover;
+}
+
+.overlay {
+position: absolute;
+bottom: 20px;
+left: 20px;
+color: white;
+font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- VIDEO 1 -->
+<div class="video-container">
+<video src="videos/video1.mp4" controls autoplay loop muted></video>
+<div class="overlay">🔥 ANZ Short 1</div>
+</div>
+
+<!-- VIDEO 2 -->
+<div class="video-container">
+<video src="videos/video2.mp4" controls loop muted></video>
+<div class="overlay">🚀 ANZ Short 2</div>
+</div>
+
+<!-- ADD MORE VIDEOS BELOW -->
+
+</body>
+</html>
